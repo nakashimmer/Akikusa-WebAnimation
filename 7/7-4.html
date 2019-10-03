@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>サンタ</title>
+		<style>
+		/*ここにCSS3を記述する*/
+			*{margin:0;padding:0;}
+			#bg{
+				width:800px;height:500px;
+				margin:50px auto;
+				position:relative;
+				border:1px solid gray;
+			}
+
+			#santa{
+				width:400px;height:160px;
+				border:1px solid blue;
+				position:absolute;
+				top:200px;
+				left:800px;
+			}
+
+			/*②画像を指定*/
+			#bg{background-image:url(bg.png);}
+			#santa{background-image:url(santa.png);}
+
+			/*③移動のアニメーション(サンタ)*/
+			#santa{
+				animation:story1 4s linear 0s infinite normal;
+				animation-fill-mode:both;
+			}
+			@keyframes story1{
+				0%{left:800px;}
+				30%{top:300px;}
+				70%{top:100px;}
+				100%{left:-400px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="bg">
+			<div id="santa"></div>
+		</div>
+	</body>
+</html>
