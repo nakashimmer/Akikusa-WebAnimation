@@ -21,8 +21,16 @@
 				padding: 5px;
 				max-width: 800px;
 			}
-			ol{color:white;}
-			
+
+			ol {
+				color: white;
+			}
+
+			ol.no li {
+				list-style-type: decimal-leading-zero;
+				margin-left: 2em;
+			}
+
 			li {
 				padding: 0.25em;
 			}
@@ -35,9 +43,9 @@
 				color: white;
 			}
 
-
-
-			a::after{content: " ✈";}
+			a::after {
+				content: " 🍁";
+			}
 
 			header {
 				background-color: #666;
@@ -46,21 +54,23 @@
 
 			header h1 {
 				font-size: 1.5em;
-				line-height:100px;
+				line-height: 100px;
 				text-align: center;
-				margin-top:0em;
+				margin-top: 0em;
 			}
 
-			h1,h2 {
+			h1,
+			h2 {
 				font-size: 1.1em;
-				color:white;
-				margin-top:1em;
+				color: white;
+				margin-top: 1em;
 			}
 
-			section>section {
+			section>section{
 				margin: 0.5em;
 				border: 1px solid gray;
 				padding: 0.5em;
+				border-radius: 10px;
 			}
 
 			section h1 {
@@ -88,13 +98,13 @@
 				text-align: center;
 			}
 
-
-			footer p small a{
+			footer p small a {
 				color: #fff;
 				font-size: 1rem;
 				line-height: 2em;
-				color:white !important;
+				color: white !important;
 			}
+	
 
 			@media(max-width:600px) {
 				.flex {
@@ -110,41 +120,48 @@
 		<div id=wrap>
 			<main>
 				<section>
-					<!--section>
-					<h2>教材</h2>
-					<ol>
-						<li><a target=_blank href="https://renshukun.azurewebsites.net/yashima/cssAnime/">オンライン簡易テキストエディタ（練習くん）</a></li>
-					</ol>	
-				</section-->
+					<h1>演習環境</h1>
+					<section>
+						<ol class="no">
+							<li><a href="https://note.com/_nakashimmer_/n/n8a5563d15fea">Visual Studio Code</a></li>
+							<li><a href="https://www.google.com/intl/ja_jp/chrome/">Google Chrome</a></li>
+						</ol>
+					</section>
+				</section>
+				<section>
 					<div class="flex">
 						<section>
 							<h1>1. 触れてみよう</h1>
 							<section>
-								<ol>
-									<li>1. <a target="_blank" href="http://www.css-spinners.com/#/spinners/">スピナー</a>
-									<li>2. <a target="_blank"
-											href="https://lab.sonicmoov.com/markup/css/css-animation-20/">使えるCSSアニメーション20選</a>
-									<li>3. <a target="_blank"
-											href="https://nakashimmer.github.io/showcase/css3/animation/tictac/index.html">メトロノーム</a>
-									<li>4. <a target="_blank"
-											href="https://nakashimmer.github.io/showcase/css3/animation/carousel/index.html">カルーセル</a>
-									<li>5. <a target="_blank"
-											href="https://nakashimmer.github.io/showcase/css3/animation/sakkaku/index.html">錯覚</a>
-									<li>6. <a target="_blank"
-											href="https://nakashimmer.github.io/showcase/css3/animation/momiji/index.html">もみじ</a>
-									<li>7. <a target="_blank"
-											href="https://nakashimmer.github.io/showcase/css3/animation/soccer/index.html">サッカーボール</a>
-									<li>8. <a target="_blank"
-											href="https://nakashimmer.github.io/showcase/css3/animation/CSSSanta/index.html">CSSサンタ</a>
-									<li>9. <a target="_blank"
-											href="https://nakashimmer.github.io/showcase/css3/animation/carp/index.html">鯉のぼり</a>
-									<li>10. <a target="_blank"
-											href="https://nakashimmer.github.io/showcase/css3/animation/3d/domino/index.html">3D①</a>
-									<li>11. <a target="_blank"
-											href="https://nakashimmer.github.io/showcase/css3/animation/3d/cube/index.html">3D②</a>
-									<li>12. <a target="_blank"
-											href="https://nakashimmer.github.io/showcase/JS/dom/css/index3.html">3Dコントロール</a>
-									<li>13.<a href="https://webdesignfacts.net/entry/css-background-animation/#gsc.tab=0">動く背景</a></li>
+								<ol class="no">
+									<li><a target="_blank"
+											href="https://nakashimmer.github.io/teacherColumn2021/cssSim/index.html">CSSシミュレーション</a></li>
+									<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/rich/index.html">リッチなCSS</a>
+									</li>
+									<li><a target="_blank" href="http://www.css-spinners.com/#/spinners/">スピナー</a></li>
+									<li><a target="_blank"
+											href="https://lab.sonicmoov.com/markup/css/css-animation-20/">使えるCSSアニメーション20選</a></li>
+									<li><a target="_blank"
+											href="https://nakashimmer.github.io/showcase/css3/animation/tictac/index.html">メトロノーム</a></li>
+									<li><a target="_blank"
+											href="https://nakashimmer.github.io/showcase/css3/animation/carousel/index.html">カルーセル</a></li>
+									<li><a target="_blank"
+											href="https://nakashimmer.github.io/showcase/css3/animation/sakkaku/index.html">錯覚</a></li>
+									<li><a target="_blank"
+											href="https://nakashimmer.github.io/showcase/css3/animation/momiji/index.html">もみじ</a></li>
+									<li><a target="_blank"
+											href="https://nakashimmer.github.io/showcase/css3/animation/soccer/index.html">サッカーボール</a></li>
+									<li><a target="_blank"
+											href="https://nakashimmer.github.io/showcase/css3/animation/CSSSanta/index.html">CSSサンタ</a></li>
+									<li><a target="_blank"
+											href="https://nakashimmer.github.io/showcase/css3/animation/carp/index.html">鯉のぼり</a></li>
+									<li><a target="_blank"
+											href="https://nakashimmer.github.io/showcase/css3/animation/3d/domino/index.html">3D①</a></li>
+									<li><a target="_blank"
+											href="https://nakashimmer.github.io/showcase/css3/animation/3d/cube/index.html">3D②</a></li>
+									<li><a target="_blank"
+											href="https://nakashimmer.github.io/showcase/JS/dom/css/index3.html">3Dコントロール</a></li>
+									<li><a href="https://webdesignfacts.net/entry/css-background-animation/#gsc.tab=0">動く背景</a></li>
 								</ol>
 							</section>
 						</section>
@@ -258,7 +275,7 @@
 			</main>
 		</div>
 		<footer>
-			<p><small><a href="https://www.facebook.com/NakashimaShunji/">(C)中島俊治</a></small></p>
+			<p><small>(C) <a>秋草学園大学</a>・<a href="https://www.facebook.com/NakashimaShunji/">中島俊治</a></small></p>
 		</footer>
 	</body>
 </html>
