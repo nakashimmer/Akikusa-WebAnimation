@@ -39,28 +39,37 @@
 			}
 
 			/*アニメーション*/
-			#parent {
-				transform-style: preserve-3d;
-				/*3次元*/
-				perspective: 105px;
-				/*奥行き*/
-			}
-
 			#child1 {
 				width: 200px;
 				height: 200px;
 				background-image: url(image.png);
 				background-size: 100% 100%;
-				animation: anime 1s linear 0s infinite normal;
+				animation-name: anime1, anime2;
+				animation-duration: 1s, 0.5s;
+				animation-timing-function: linear;
+				animation-delay: 0s, 1s;
+				animation-iteration-count: infinite;
+				animation-direction: normal, alternate;
+				animation-fill-mode: both, both;
 			}
 
-			@keyframes anime {
+			@keyframes anime1 {
 				0% {
-					rotate: y 0deg;
+					translate: 200px 0px;
 				}
 
 				100% {
-					rotate: y 360deg;
+					translate: -200px 0px;
+				}
+			}
+
+			@keyframes anime2 {
+				0% {
+					rotate: -180deg;
+				}
+
+				100% {
+					rotate: 180deg;
 				}
 			}
 		</style>

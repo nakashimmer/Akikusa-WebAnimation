@@ -23,16 +23,21 @@
 
 			/*トランジション*/
 			#box1 {
-				transition: all 1s ease-in-out 0s;
+				background-image: url(image.png);
+				/*背景画像*/
+				background-size: 100% 100%;
+				/*背景のサイズ*/
+				border: none;
+				/*枠線の無効化*/
+				transition: filter 1s ease-in-out 0s;
 			}
 
 			#box1:hover {
-				width: 300px;
-				height: 300px;
+
 			}
 		</style>
 	</head>
 	<body>
-		<div id="box1">Box1</div>
+		<div id="box1"></div>
 	</body>
 </html>

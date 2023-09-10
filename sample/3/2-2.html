@@ -39,28 +39,25 @@
 			}
 
 			/*アニメーション*/
-			#parent {
-				transform-style: preserve-3d;
-				/*3次元*/
-				perspective: 105px;
-				/*奥行き*/
-			}
-
 			#child1 {
 				width: 200px;
 				height: 200px;
 				background-image: url(image.png);
 				background-size: 100% 100%;
-				animation: anime 1s linear 0s infinite normal;
+				animation: anime 1s linear 0s infinite normal both;
+				border-width: 10px;
+				border-style: solid;
+				border-color: red green blue yellow;
+				border-radius: 50%;
 			}
 
 			@keyframes anime {
 				0% {
-					rotate: y 0deg;
+					rotate: 0deg;
 				}
 
 				100% {
-					rotate: y 360deg;
+					rotate: 360deg;
 				}
 			}
 		</style>

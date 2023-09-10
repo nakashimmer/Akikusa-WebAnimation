@@ -39,28 +39,25 @@
 			}
 
 			/*アニメーション*/
-			#parent {
-				transform-style: preserve-3d;
-				/*3次元*/
-				perspective: 105px;
-				/*奥行き*/
-			}
-
 			#child1 {
 				width: 200px;
 				height: 200px;
 				background-image: url(image.png);
 				background-size: 100% 100%;
-				animation: anime 1s linear 0s infinite normal;
+				animation: anime 1s linear 0s infinite normal both;
 			}
 
 			@keyframes anime {
 				0% {
-					rotate: y 0deg;
+					scale: 1 1;
+				}
+
+				60% {
+					scale: 1.4 1.4;
 				}
 
 				100% {
-					rotate: y 360deg;
+					scale: 1 1;
 				}
 			}
 		</style>
